@@ -150,7 +150,7 @@ function drawLegend() {
   const baseLine = `Guard pairs = ${guardPairs.length}`;
   text(baseLine, x0, 30);
 
-  let msg = "Drag along the line to select an interval.";
+  let msg = "Tip: Drag along the line to select an interval.";
   if (currentInterval) {
     const { count, large, guardIndex } = currentInterval;
     if (!large) {
