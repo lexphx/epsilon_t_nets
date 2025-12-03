@@ -37,7 +37,7 @@ function setup() {
   epsSlider.parent(controlsDiv);
   epsSlider.style("width", "80px");
   epsSlider.input(() => {
-    const eps = epsSlider.value();
+    eps = epsSlider.value();
     buildGuards();
     currentInterval = null;
     epsLabel.html("ε = " + eps.toFixed(2));
