@@ -37,10 +37,10 @@ function setup() {
   epsSlider.parent(controlsDiv);
   epsSlider.style("width", "80px");
   epsSlider.input(() => {
-    const eps_v = epsSlider.value();
+    const eps = epsSlider.value();
     buildGuards();
     currentInterval = null;
-    epsLabel.html("ε = " + eps_v.toFixed(2));
+    epsLabel.html("ε = " + eps.toFixed(2));
   });
   epsLabel.html("ε = " + epsSlider.value().toFixed(2));
 
