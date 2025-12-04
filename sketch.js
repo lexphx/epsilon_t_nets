@@ -272,7 +272,7 @@ function updateCurrentInterval(idx) {
   const i = min(dragStartIndex, idx);
   const j = max(dragStartIndex, idx);
   const count = j - i + 1;
-  const large = count >= eps * n;
+  const large = count >= (eps * n) - 0.0001;
 
   let guardIndex = -1;
   if (large) {
